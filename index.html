@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: #141519;
+      margin: 0px;
+      padding: 0px;
+      box-sizing: 0px;
+      display: grid;
+      place-content: center;
+      min-height: 100vh;
+      min-width: 100vh;
+    }
+    .container{
+      width: 300px;
+      height: 300px;
+      border-radius: 15px;
+      border: none;
+      background-color: #1f2630;
+    }
+    .icon1{
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: #272e38 solid 10px;
+    }
+    .star{
+      padding-top: 15px;
+      padding-left: 15px;
+
+    }
+    *{
+      font-family: sans-serif;
+    }
+    h3{
+      color: white;
+      padding-left: 15px;
+    }
+    p{
+      color: #737a84;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 15px;
+    }
+    .numbers{
+      padding-left: 15px;
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      padding-right: 15px;
+    }
+    .buttonsbmt{
+      height: 30px;
+      width: 270px;
+      border: none;
+      border-radius: 50px;
+      background-color: #fc7618;
+      color: #171e28;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .buttonsbmt:hover{
+      background-color: white;
+      color: #737a84;
+      cursor: pointer;
+    }
+    .number1:active{
+      background-color: #fc7618;
+      color: #737a84;
+      cursor: pointer;
+    }
+    .btn{
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+    }
+    .number1{
+      text-align: center;
+      background-color: #272e38;
+      color: white;
+      min-width: 40px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: none;
+      transition: all;
+    }
+    .number1:hover{
+      background-color: white;
+      color: #737a84;
+      cursor: pointer;
+    }
+    a{
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="star">
+      <img class="icon1" src="./images/icon-star.svg" alt="photo">
+    </div>
+    <div class="main">
+      <h3>How did we do?</h3>
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+    </div>
+    <div class="numbers">
+      <button class="number1">1</button>
+      <button class="number1">2</button>
+      <button class="number1">3</button>
+      <button class="number1">4</button>
+      <button class="number1">5</button>
+    </div>
+    <div class="btn">
+      <a href="thanku.html" class="buttonsbmt">SUBMIT</a>
+    </div>
+  </div>
+</body>
+</html>
